@@ -1,0 +1,132 @@
+body{
+    background-color: rgb(214, 209, 209);
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    font-family: sans-serif;
+}
+img{
+    width: 620px;
+    height: 150px;
+    border: none;
+    border-radius: 7px;
+}
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: translateY(-5px); /* moves image up */
+}
+
+.intro{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 7px;
+    border-top: 9px solid #f4b400;
+}
+.intro h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.intro p{
+    font-family: Roboto, sans-serif;
+}
+.line{
+    border-bottom: 1px solid #ccc;
+}
+.req{
+    color: red;
+    font-size: 12px;
+}
+.name{
+    background-color: white;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 7px;
+    padding: 10px 10px 20px 10px;
+}
+h3::after{
+    content: " *";
+    color: red;
+    font-weight: 700;
+}
+.name h3{
+    margin-bottom: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 8px 4px;
+    font-size: 16px;
+    position: relative;
+}
+input:focus{
+    border-bottom: 2px solid #4285f4;
+}
+button{
+    border: none;
+    padding: 10px;
+    background-color: red;
+    border-radius: 4px;
+    color: bisque;
+    width: 15%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.btnsubmit{
+    background-color: blue;
+    cursor: pointer;
+}
+.btnsubmit:hover{
+    background-color: rgb(85, 85, 248);
+}
+.btnreset:hover::after{
+    transform: scaleX(1);
+}
+.btnreset{
+    background-color: rgb(214, 209, 209);
+    color: red;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btnreset:hover{
+    color: rgb(80, 76, 76);
+}
+.warning{
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+}
+.con:hover{
+    color: rgb(226, 94, 94);
+}
+.googleform{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  color: blue;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2px; /* distance below text */
+  width: 100%;
+  height: 2px;
+  background: blue;
+  transform: scaleX(0); /* hidden initially */
+  transform-origin: center; /* start from left */
+  transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1); /* reveal underline */
+}
